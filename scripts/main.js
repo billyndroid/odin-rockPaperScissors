@@ -11,13 +11,24 @@ const result = computerPlay(itemArray);
 console.log(result);
 
 // plays one round of game
+
+function playRound(playerSelection, computerSelection) {
+    // your code here!
+  }
+  
+  const playerSelection = "rock";
+  const computerSelection = computerPlay();
+  console.log(playRound(playerSelection, computerSelection));
+  
+
+/*
 function playGame(playerSelection, computerSelection) {
     if (playerSelection == computerSelection) {
         return "It's a draw. Refresh to play again.";
     } if (playerSelection == "rock" && computerSelection == "paper") {
         return "paper wins. Refresh to try again.";
-    } if (playerSelection == "")
-}
+    } if (playerSelection == "");
+}*/
 
 /*let mainArray = ["rock", "paper", "scissors"];
 
