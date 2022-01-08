@@ -22,7 +22,7 @@ function playRound(playerSelection, computerSelection) {
         }
 }
     
-
+/*
   
   let playerSelection =  document.getElementById("input");
   const computerSelection = computerPlay();
