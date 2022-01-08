@@ -6,28 +6,36 @@ function computerPlay(arr) {
 }
 
 let itemArray = ["rock", "paper", "scissors"];
+let result = computerPlay(itemArray);
+console.log("The computer has chosen " + result);
 
-const result = computerPlay(itemArray);
-console.log(result);
+// prompts user for input, gets user input converts to lower case and returns result as playerSelection 
+let input = prompt("Type rock, paper or scissors to start game.");
+console.log(`You have selected ${input}`);
+var inputLower = input.toLowerCase();
+playerSelection = inputLower;
 
-// plays one round of game
-
+// write function that plays one round of game that takes two parameters
 function playRound(playerSelection, computerSelection) {
-    // your code here!
-  }
+    if (computerSelection === playerSelection) {
+        console.log("It's a draw, refresh to try again."); 
+        }
+}
+    
+
   
-  const playerSelection =  document.getElementById("input");
+  let playerSelection =  document.getElementById("input");
   const computerSelection = computerPlay();
   console.log(playRound(playerSelection, computerSelection));
   
 
 /*
 function playGame(playerSelection, computerSelection) {
-    if (playerSelection == computerSelection) {
+    if (playerSelection === computerSelection) {
         return "It's a draw. Refresh to play again.";
-    } if (playerSelection == "rock" && computerSelection == "paper") {
+    } if (playerSelection === "rock" && computerSelection === "paper") {
         return "paper wins. Refresh to try again.";
-    } if (playerSelection == "");
+    } if (playerSelection === "");
 }*/
 
 /*let mainArray = ["rock", "paper", "scissors"];
