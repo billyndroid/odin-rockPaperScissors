@@ -18,7 +18,15 @@ playerSelection = inputLower;
 // write function that plays one round of game that takes two parameters
 function playRound(playerSelection, computerSelection) {
     if (computerSelection === playerSelection) {
-        console.log("It's a draw, refresh to try again."); 
+            console.log("It's a draw, refresh to try again."); 
+        } if (playerSelection === "rock" && computerSelection === "paper") {
+            console.log ("You Lose! Paper beats Rock."); 
+        } if (playerSelection === "paper" && computerSelection === "scissors") {
+            console.log ("You Lose! Scissors beats Paper.");
+        } if (playerSelection === "scissors" && computerSelection === "paper") {
+            console.log ("You Win! Scissors beats Paper.");
+        } if (playerSelection === "paper" && computerSelection === "rock") {
+            console.log ("You Win! Rock beats Paper.");
         }
 }
     
